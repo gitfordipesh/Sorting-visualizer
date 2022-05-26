@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sorting Visualizer</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
 
 </head>
 <body>
@@ -28,18 +29,29 @@
 
         <div id="Info_Cont1">
             <h3>About</h3>
-            <hr>
-            <p id="sorting-name"></p>
-            <p id = "about-sort">
-                <br>
-                Sorting is nothing but arranging a string of numbers or other elements in the correct order.
-                This project Sorting Visualizer is a UI which allows the users to select the array size,speed of the visualization  and  select the sort algorithm.
-                <br>
-                The problem Sorting Visualizer solves. Created a web application using HTML, CSS, Javascript to visualize how various sorting algorithms work.
-                <br>
-            </p>
-            <hr>
-            <p id="complexity"></p>
+            <div class="about-con">
+                <h3 class="middle-heading" id="sorting-name"></h3>
+                <p id = "about-sort">
+                    <br>
+                    Sorting is nothing but arranging a string of numbers or other elements in the correct order.
+                    This project Sorting Visualizer is a UI which allows the users to select the array size,speed of the visualization  and  select the sort algorithm.
+                    <br>
+                    The problem Sorting Visualizer solves. Created a web application using HTML, CSS, Javascript to visualize how various sorting algorithms work.
+                    <br>
+                </p>
+            </div>
+            <br>
+            <div class="complex about-con">
+                <h3 class="middle-heading">Time Comlexity</h3>
+                <div class="array-inputs">
+                    <p>Best Case</p>
+                    <p id="best"></p>
+                    <p>Worst Case</p>
+                    <p id="worst"></p>
+                    <p>Average Case</p>
+                    <p id="avg"></p>
+                </div>
+            </div>
             <hr>
             <p id = "about-bars">
                 <br> The Different Bars Represents the elements Of the Array.

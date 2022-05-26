@@ -8,8 +8,8 @@
 header {
   background-color: 	#5C4033;
   color: white;
-  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1),
-      inset 0 0 1px rgba(255, 255, 255, 0.6);
+  box-shadow: 0 0 25px rgba(236, 7, 7, 0.1),
+  inset 0 0 1px rgba(255, 255, 255, 0.6);
   position: sticky;
   top: -126px;
   transition: all 0.3s ease 0s;
@@ -18,7 +18,8 @@ header {
 h2 {
   text-align: center;
   line-height: 2em;
-  font-size: 3.5rem;
+  font-size: 3.5em;
+  text-transform: uppercase;
 }
 
 .algos {
@@ -33,6 +34,7 @@ h2 {
   outline: none;
   padding: 10px;
   font-size: 1.7rem;
+  text-transform: uppercase;
 }
 .algos button:hover{
   cursor: pointer;
@@ -70,7 +72,8 @@ h2 {
 
 .array-inputs #a_generate {
   background-color: transparent;
-  border: none;
+  border: 2px solid #5C4033;
+  border-radius: 25px 0px;
   outline: none;
   padding: 10px 0px;
   font-size: larger;
@@ -80,6 +83,7 @@ h2 {
 
 .array-inputs #a_generate:hover {
   cursor: pointer;
+  box-shadow: 0px 0px 18px #5C4033;
 }
 
 
@@ -95,11 +99,13 @@ h2 {
 
  .algos .butt_locked {
   background-color: transparent;
+  color: gray;
   cursor: pointer;
 }
 
  .algos .butt_locked:hover {
   background-color: transparent;
+  color: gray;
   cursor: pointer;
 }
 
@@ -120,12 +126,11 @@ h2 {
 }
 
 section {
-  display: grid;
-  -ms-grid-columns: 35% 65%;
-  grid-template-columns: 35% 65%;
+  display: flex;
 }
 
 section #Info_Cont1 {
+  width: 35%;
   background-color:  #C4A484 ;
   color: whitesmoke;
   padding: 35px;
@@ -137,9 +142,22 @@ section #Info_Cont1  p{
   font-weight: 100;
 }
 
+.about-con{
+  padding: 25px;
+  /* background-color: bisque;  */
+  background-color: rgb(245, 220, 189);
+  border-radius: 25px 0px;
+}
 
+.complex{
+  display: none;
+}
+.complex.active{
+  display: block;
+}
 .cont{
   background-color: burlywood;
+  width: 65%;
 }
 section #array_container {
   display: flex;
@@ -153,6 +171,10 @@ section #array_container {
 
 h3{
   color: black;
+  text-transform: uppercase;
+}
+.middle-heading{
+  text-align: center;
 }
 #about-bars{
   font-style: italic;
@@ -177,15 +199,4 @@ footer{
 
 .hide {
   display: none;
-}
-
-/*
-@media (max-width: 480px)//Mobiles
-{
-    
-}
-
-@media (min-width: 481px) and (max-width: 1250px)//Tablets
-{
-
 }
