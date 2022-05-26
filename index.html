@@ -4,14 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sorting Visualizer</title>
-
     <link rel="stylesheet" href="./css/style.css">
 
 </head>
 <body>
 
     <header>
-        <nav>
+        <div class="nav-brand">
+            <h2>Sorting Visualizer</h2>
+        </div>
+
+        <div class="algos">
+            <button onclick="bubbleFunction()">Bubble</button>
+            <button onclick="selectionFunction()">Selection</button>
+            <button onclick="insertionFunction()">Insertion</button>
+            <button onclick="mergeFunction()">Merge</button>
+            <button onclick="quickFunction()">Quick</button>
+            <button onclick="heapFunction()">Heap</button>
+        </div>
+    </header>
+
+    <section>
+
+        <div id="Info_Cont1">
+            <h3>About</h3>
+            <hr>
+            <p id="sorting-name"></p>
+            <p id = "about-sort">
+                <br>
+                Sorting is nothing but arranging a string of numbers or other elements in the correct order.
+                This project Sorting Visualizer is a UI which allows the users to select the array size,speed of the visualization  and  select the sort algorithm.
+                <br>
+                The problem Sorting Visualizer solves. Created a web application using HTML, CSS, Javascript to visualize how various sorting algorithms work.
+                <br>
+            </p>
+            <hr>
+            <p id="complexity"></p>
+            <hr>
+            <p id = "about-bars">
+                <br> The Different Bars Represents the elements Of the Array.
+            </p>
+            <hr>
+        </div>
+        <div class="cont">
             <div class="array-inputs">
                 <p>Size of the array:</p>
                 <input id="a_size" type="range" min=20 max=150 step=1 value=80>
@@ -19,44 +54,26 @@
                 <input id="a_speed" type="range" min=1 max=5 step=1 value=4>
                 <button id="a_generate">Generate New Array!</button>
             </div>
-
-            <div class="header_right">
-                <p class="nav-heading">Sorting visualizer</p>
-
-                <div class="algos">
-                    <button >Bubble</button>
-                    <button >Selection</button>
-                    <button >Insertion</button>
-                    <button >Merge</button>
-                    <button >Quick</button>
-                    <button style="margin-right: 0px;">Heap</button>
-                </div>
+            <div id="array_container">
+    
             </div>
-
-        </nav>
-    </header>
-
-    <section>
-
-        <div id="Info_Cont1">
-            <p>The Different Bars Represents the elements Of the Array.
-		</p>
         </div>
 
-        <div id="array_container">
-            
-        </div>
-
-        <div id="Info_Cont2">
-            <p>The Colors 
-		Blue depicts all unsorted elements of the Array.
-		Yellow depicts the initial element of the Array.
-		Red depicts the element the with which the initial element is compared with.
-		Green Depicts the element is sorted.</p>
-        </div>
 
     </section>
-
+    <footer>
+        <div class="copy">
+            <p>&copy <b>Sorting Visualizer</b> Created <b>By :</b></p>
+        </div>
+        <div class="created-by">
+            <ul>
+                <li>Dipesh Gupta</li>
+                <li>Aman Bajpai</li>
+                <li>Harsh Mishra</li>
+                <li>Abhishek Kumar</li>
+            </ul>
+        </div>
+    </footer>
     <script src="./scripts/main.js"></script>   <!--This should be at the end of body and should be loaded before sorts.js-->
     <script src="./scripts/visualizations.js"></script>  <!--This should be loaded after main.js-->
 

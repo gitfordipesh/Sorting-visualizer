@@ -4,136 +4,175 @@
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: large;
   font-weight: bold;
-  text-transform: uppercase;
 }
-
-nav {
-  background-color: #3b3a3a;
+header {
+  background-color: 	#5C4033;
   color: white;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 30% 60%;
-      grid-template-columns: 30% 60%;
-  -webkit-column-gap: 10%;
-          column-gap: 10%;
-  padding: 0% 5%;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1),
+      inset 0 0 1px rgba(255, 255, 255, 0.6);
+  position: sticky;
+  top: -126px;
+  transition: all 0.3s ease 0s;
 }
 
-nav .array-inputs {
-  display: -ms-grid;
+h2 {
+  text-align: center;
+  line-height: 2em;
+  font-size: 3.5rem;
+}
+
+.algos {
+  display: flex;
+  justify-content: center;
+}
+
+.algos button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  outline: none;
+  padding: 10px;
+  font-size: 1.7rem;
+}
+.algos button:hover{
+  cursor: pointer;
+  color: gainsboro;
+  transition: all ease-in-out 0.3s;
+}
+
+.array-inputs {
+  width: 60%;
+  margin: 20px auto;
   display: grid;
   -ms-grid-columns: 60% 40%;
-      grid-template-columns: 60% 40%;
+  grid-template-columns: 60% 40%;
   place-content: center;
-  padding: 5% 0%;
+  color: #5C4033;
 }
 
-nav .array-inputs #a_size {
-  padding: 5% 0%;
+.array-inputs p{
+  font-weight: bold;
+  font-size: large;
 }
-
-nav .array-inputs #a_speed {
-  padding: 5% 0%;
-}
-
-nav .array-inputs #a_generate {
-  background-color: transparent;
-  border: none;
-  outline: none;
-  color: white;
-  padding: 4% 0% 0% 0%;
-  padding-left: 20%;
-}
-
-nav .array-inputs #a_generate:hover {
-  cursor: pointer;
-}
-
-nav .header_right {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.array-size{
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+}
+.speed{
+  display: flex;
+}
+.array-inputs #a_size {
+  padding: 0;
 }
 
-nav .header_right .nav-heading {
-  display: inline-block;
-  font-size: xxx-large;
-  padding: 3% 0%;
+.array-inputs #a_speed {
+  padding: 0;
 }
 
-nav .header_right .algos {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (16.66667%)[6];
-      grid-template-columns: repeat(6, 16.66667%);
-  place-content: center;
-  padding: 2% 0%;
-}
-
-nav .header_right .algos button {
+.array-inputs #a_generate {
   background-color: transparent;
   border: none;
-  color: white;
   outline: none;
-  padding: 5% 0%;
-  font-size: x-large;
+  padding: 10px 0px;
+  font-size: larger;
+  font-weight: bold;
+  font-style: italic;
 }
 
-nav .header_right .algos button:hover {
-  background-color: blue;
+.array-inputs #a_generate:hover {
   cursor: pointer;
 }
 
-nav .header_right .algos .butt_locked {
+
+.algos button:active{
+  color:red
+}
+
+ .algos button:hover {
+  background-color: burlywood;
+  color: 	#5C4033;
+  cursor: pointer;
+}
+
+ .algos .butt_locked {
   background-color: transparent;
   cursor: pointer;
 }
 
-nav .header_right .algos .butt_locked:hover {
+ .algos .butt_locked:hover {
   background-color: transparent;
   cursor: pointer;
 }
 
-nav .header_right .algos .butt_selected {
+ .algos .butt_selected {
   background-color: white;
   color: green;
 }
 
-nav .header_right .algos .butt_selected:hover {
+ .algos .butt_selected:hover {
   background-color: white;
   cursor: pointer;
 }
 
-nav .header_right .algos .butt_unselected:hover {
-  background-color: blue;
+ .algos .butt_unselected:hover {
+  background-color: burlywood;
+  color: 	#5C4033;
   cursor: pointer;
 }
 
 section {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 20% 60% 20%;
-      grid-template-columns: 20% 60% 20%;
+  -ms-grid-columns: 35% 65%;
+  grid-template-columns: 35% 65%;
 }
 
 section #Info_Cont1 {
-  padding: 20%;
+  background-color:  #C4A484 ;
+  color: whitesmoke;
+  padding: 35px;
 }
 
+section #Info_Cont1  p{
+  text-transform: capitalize;
+  color: #5C4033;
+  font-weight: 100;
+}
+
+
+.cont{
+  background-color: burlywood;
+}
 section #array_container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  width: 100%;
+  width: 85%;
+  margin: auto;
   height: 70vh;
+  padding: 25px;
+  background-color: bisque;
+  border-radius: 10px;
 }
 
-section #Info_Cont2 {
-  padding: 20%;
+h3{
+  color: black;
+}
+#about-bars{
+  font-style: italic;
+}
+footer{
+  background-color: 	#5C4033;
+  color: white;
+}
+.copy {
+  margin: auto;
+  text-align: center;
+}
+
+.created-by ul{
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+}
+.created-by ul li{
+  list-style-type: none;
 }
 
 .hide {
@@ -155,11 +194,5 @@ section #Info_Cont2 {
 {
 
 }
-*/
-/*
-    *****************
-    DONE BY:-   TUMMALA KETHAN
-    E-MAIL:-    tummala.kethan@gmail.com
-    *****************
 */
 /*# sourceMappingURL=style.css.map */
